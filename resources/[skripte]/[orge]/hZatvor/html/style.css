@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	width: 100vw;
+	height: 100vh;
+}
+
+#zatvor {
+	position: absolute;
+	overflow: hidden;
+}
+
+#zatvorslika {
+	position: fixed;
+	width: 5%;
+	height: 7%;
+	left: 47.5%;
+	top: 5%;
+	overflow: visible;
+}
+
+#lajna2 {
+	fill: transparent;
+	stroke: rgba(206,82,89,1);
+	stroke-width: 2.5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.lajna2 {
+	overflow: visible;
+	position: fixed;
+	width: 2.5%;
+	height: 15%;
+	left: 43.5%;
+	top: 1.5%;
+	transform: matrix(1,0,0,1,0,0);
+}
+
+#lajna1 {
+	fill: transparent;
+	stroke: rgba(206,82,89,1);
+	stroke-width: 2.5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.lajna1 {
+	overflow: visible;
+	position: fixed;
+	width: 2.5%;
+	height: 15%;
+	left: 54.2%;
+	top: 1.5%;
+	transform: matrix(1,0,0,1,0,0);
+}
+
+#vremezatvora {
+	left: 27%;
+	top: 4.9%;
+	position: fixed;
+	overflow: visible;
+	width: 20%;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.7vw;
+	color: rgba(206,82,89,1);
+}
+
+#uzatvorusitekst {
+	left: 57%;
+	top: 4.8%;
+	position: fixed;
+	overflow: visible;
+	width: 20%;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.8vw;
+	color: rgba(206,82,89,1);
+}
+
+#uhapsentekst {
+	left: 57%;
+	top: 8%;
+	position: fixed;
+	overflow: visible;
+	width: 20%;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.8vw;
+	color: rgba(255,255,255,1);
+}
+
+#imekaraktera {
+	left: 57%;
+	top: 11.2%;
+	position: fixed;
+	overflow: visible;
+	width: 20%;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.8vw;
+	color: rgba(188,188,188,1);
+}
+
+#preostalotekst {
+	left: 27%;
+	top: 9%;
+	position: fixed;
+	overflow: visible;
+	width: 20%;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1vw;
+	color: rgba(255,255,255,1);
+}

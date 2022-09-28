@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+#container {
+  position: absolute;
+  overflow: hidden;
+}
+
+.linkk {
+  position: fixed;
+  left: 80%;
+  top: 1%;
+  overflow: visible;
+  width: 20%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  text-align: left;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5vw;
+  color: rgba(255, 255, 255, 1);
+}
+
+.linkk img {
+  position: fixed;
+  top: 2%;
+  left: 92.5%;
+  width: 5.5%;
+  height: 10%;
+}
+
+.igrac {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  width: 1.5%;
+  height: 2.2%;
+  left: 95%;
+  top: 12%;
+  overflow: visible;
+}
+
+.idigraca {
+  position: fixed;
+  left: 93.5%;
+  top: 12%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  overflow: visible;
+  width: 20%;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1vw;
+  color: rgba(255, 255, 255, 1);
+}
+
+#brojigraca {
+  position: fixed;
+  left: 96.5%;
+  top: 12%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  overflow: visible;
+  width: 20%;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1vw;
+  color: rgba(255, 255, 255, 1);
+}
+
+#posao {
+  opacity: 0.85;
+  left: 71%;
+  top: 15%;
+  position: absolute;
+  width: 27%;
+  white-space: nowrap;
+  text-align: right;
+  font-family: Rubik;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1vw;
+  color: rgba(255, 255, 255, 1);
+}
+
+#novac {
+  opacity: 0.85;
+  left: 71%;
+  top: 19%;
+  position: absolute;
+  width: 27%;
+  white-space: nowrap;
+  text-align: right;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.9vw;
+  color: rgb(255, 255, 255);
+}
+
+#banka {
+  opacity: 0.85;
+  left: 71%;
+  top: 22%;
+  position: absolute;
+  width: 27%;
+  white-space: nowrap;
+  text-align: right;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.9vw;
+  color: rgba(255, 255, 255, 1);
+}
+
+#black_money {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+}
+
+#money {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  color: rgb(232, 125, 18);
+}
+
+#bank {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+}
+
+#prljavnovac {
+  opacity: 0.85;
+  left: 71%;
+  top: 25%;
+  position: absolute;
+  width: 27%;
+  white-space: nowrap;
+  text-align: right;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.9vw;
+  color: rgba(255, 255, 255, 1);
+}

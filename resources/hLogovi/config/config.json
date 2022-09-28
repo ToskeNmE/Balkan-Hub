@@ -1,0 +1,60 @@
+{
+    "locals": "en",
+
+    "EnableAcFunctions": false,
+
+    "allLogs": true,
+    "postals": false,
+    "weaponLog": true,
+    "inlineField": true,
+
+    "playerId": true,
+    "steamId": true,
+    "steamUrl": true,
+    "discordId": true,
+    "license": true,
+    "license2": true,
+    "ip": false,
+    "playerPing": true,
+
+    "Session": false,
+    "PlayTime": true,
+    "playerHealth": true,
+    "playerArmor": true,
+    "timestamp": true,
+
+    "forceSteam": false,
+
+    "nameChangePerms": "jd.staff",
+    "logHistoryPerms": "jd.staff",
+    "screenshotPerms": "jd.staff",
+    "AntiCheatBypass": "jd.staff",
+
+    "DiscordUpdateNotify": true,
+
+    "userName": "Dark Najjaci :P DD On top",
+    "avatar": "https://cdn.discordapp.com/attachments/926840554153725962/990246141578850314/logo.png",
+    "communityName": "DarkDevelopment",
+    "communityLogo": "https://cdn.discordapp.com/attachments/926840554153725962/990246141578850314/logo.png",
+    "footerText": "2021 - 2022 © Prefech",
+    "footerIcon": "https://cdn.discordapp.com/attachments/926840554153725962/990246141578850314/logo.png",
+
+    "PrefechGlobalBans": false,
+    "GlobalBanBypass": [],
+
+    "WeaponsNotLogged": [
+        "WEAPON_SNOWBALL",
+        "WEAPON_FIREEXTINGUISHER",
+        "WEAPON_PETROLCAN"
+    ],
+
+    "Commands": {
+        "logs": ["logs", "lh"],
+        "screenshot": ["screenshot", "ss"]
+    },
+
+    "useESX": true,
+    "esxName": true,
+    "esxJob": true,
+    "esxMoney": true
+}

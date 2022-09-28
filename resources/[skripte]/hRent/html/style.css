@@ -1,0 +1,134 @@
+body {
+    overflow: hidden;
+    display: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    position: absolute;
+    width: 75%;
+    height: 85%;
+    background-color: rgba(255, 118, 6, 0.473);
+    left: 12.5%;
+    top: 7.5%;
+}
+
+
+#close {
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+}
+
+#label {
+    position: absolute;
+    left: 40.5%;
+    top: -1%;
+    color:aliceblue;
+    min-width: 20%;
+    font-size: x-large;
+    border-bottom: 3px solid rgb(245, 245, 245);
+    padding-bottom: 1%;
+    text-align: center;
+
+}
+
+.vehicles {
+    position: relative;
+    background: #000000d3;
+    width: 100%;
+    height: 90%;
+    top: 10%;
+    overflow-y: scroll;
+}
+
+.blista {
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 40%;
+    left: 6.5%;
+    background-image: linear-gradient(to right, rgb(73, 27, 1) , rgb(255, 94, 0));
+    margin-left: 2%;
+    margin-right: 10%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    border-radius: 20px;
+}
+
+
+.blista img {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 25%;
+}
+
+.blista .label {
+    position: absolute;
+    left: 37.5%;
+    top: 2.5%;
+    min-width: 30%;
+    color: white;
+    font-size: larger;
+    border-bottom: 1px solid white;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+.blista .price {
+    position: absolute;
+    left: 77.5%;
+    width: 25%;
+    color: white;
+    font-size: small;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+.blista .rent-button {
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    bottom: 0;
+    background-color: transparent;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    text-align: center;
+    color: white;
+    transition: color 1s;
+}
+
+.blista .rent-button:focus {
+    outline: none;
+}
+
+.blista .rent-button hr {
+    width: 0%;
+    opacity: 0.0;
+    transition: width 1s, opacity 1s;
+}
+
+.blista .rent-button:hover hr {
+    width: 25%;
+    opacity: 1.0;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+::-webkit-scrollbar
+{
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: rgba(255, 255, 255, 0.705);
+}

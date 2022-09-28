@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Roboto+Condensed');
+
+.menu {
+	font-family: 'Poppins', sans-serif;
+	min-width: 350px;
+	color: #fff;
+	position: absolute;
+  padding-top: 25px;
+	padding-bottom:25px;
+  background: linear-gradient(203deg, rgba(235,204,21,0.65) 0%, rgba(121,116,9,0.65) 35%, rgba(0,0,0,0.65) 100%);
+  background-size: cover;
+	-webkit-box-shadow: 10px 9px 42px -5px rgba(0, 0, 0, 0.52);
+	-moz-box-shadow: 10px 9px 42px -5px rgba(0, 0, 0, 0.52);
+    box-shadow: 10px 9px 42px -5px rgba(0, 0, 0, 0.52);
+    border-radius: 5px;
+}
+
+.circle-btn {
+  position: relative;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.199);
+  float: left;
+  margin-left: 20px;
+  margin-top:-10px;
+}
+
+.circle-btn li {
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-73%,-50%);
+}
+
+
+.head {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.menu .head {
+	text-align: center;
+	height: 30px;
+	color: #ffffff;
+	font-weight: 300;
+	line-height: 27px;
+	font-size: 18px;
+}
+
+.menu .menu-items {
+	margin-left:0;
+	max-height: 525px;
+	overflow-y: hidden;
+	overflow-x:hidden;
+  font-weight: 100;
+}
+
+.menu .menu-items .menu-item {
+	opacity:1;
+  display: block;
+  padding: 13px;
+  font-size: 16px;
+  padding-left:0px;
+  text-align: left;
+  text-indent: 15px;
+  color: white;
+}
+
+.menu .menu-items .menu-item.selected {
+  opacity:1;
+  margin:0 auto;
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.250);
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.head > span {
+  position: relative;
+  display: inline-block;
+}
+
+.head > span::before,
+.head > span::after {
+  content: "";
+  position: absolute;
+  top: 52%;
+  width: 9999px;
+  height: 0.5px;
+  background: #ffffff;
+}
+
+.head > span::before {
+  right: 105%;
+  margin-right: 15px;
+}
+
+.head > span::after {
+  left: 105%;
+  margin-left: 15px;
+}
+
+.menu.align-left {
+  left: 40;
+	top: 200;
+}
+
+.menu.align-top-left {
+	left: 40;
+	top: 200;
+}
+
+.menu.align-top {
+  left: 40;
+	top: 200;
+}
+
+.menu.align-top-right {
+  left: 40;
+  top: 200;
+}
+
+.menu.align-right {
+  left: 40;
+	top: 200;
+}
+
+.menu.align-bottom-right {
+  left: 40;
+	top: 200;
+}
+
+.menu.align-bottom {
+  left: 40;
+	top: 200;
+}
+
+.menu.align-bottom-left {
+  left: 40;
+	top: 200;
+}
+
+.menu.align-center {
+  left: 40;
+	top: 200;
+}

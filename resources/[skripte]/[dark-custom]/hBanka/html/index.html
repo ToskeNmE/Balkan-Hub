@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Banka</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="js/creditCardValidator.js"></script>
+</head>
+<body>
+    <div id="blurbg"></div>
+    <div id="header">
+        <p id="title">HUB BANKA</p>
+        <i class="fa-solid fa-dollar-sign"></i>
+        <p id="balance">BALANCE</p>
+        <p id="balance-amount">100000000000000000000000000$</p>
+    </div>
+    <button id="buy-creditcard" onclick="dialogbuy()">GENERISI KARTICU</button>
+    <button id="buy-pin" onclick="dialogpin()">GENERISI PIN</button>
+    <div id="body">
+        <div id="card">
+            <p id="card-title">ZLATNA KARTICA</p>
+            <p id="char-name">Milojko Milojkovic</p>
+            <p id="card-number">**** **** ****</p>
+            <p id="card-date">ISTICE</p>
+            <p id="card-date-amount">07/30</p>
+            <p id="card-pin">PIN</p>
+            <p id="card-pin-amount">9999</p>
+            <p id="card-code">CVD</p>
+            <p id="card-code-amount">999</p>
+            <p id="card-bottom-text">VRSTA KARTICE JE <span>DEBITNA</span></p>
+            <img id="card-chip-image" src="https://cdn-icons-png.flaticon.com/512/6404/6404078.png">
+        </div>
+        <div id="option">
+            <p id="option-title">OPCIJE BANKE</p>
+            <div id="deposit" onclick="openwrapper('deposit')">
+                <i class="fas fa-university"></i>
+                <p id="option-title">OSTAVI NOVAC</p>
+            </div>
+            <div id="withdraw" onclick="openwrapper('withdraw')">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <p id="option-title">PODIGNI NOVAC</p>
+            </div>
+            <div id="transfer" onclick="openwrapper('transfer')">
+                <i class="fas fa-exchange"></i>
+                <p id="option-title">POSALJI NOVAC</p>
+            </div>
+            <div id="billing" onclick="openwrapper('billing')">
+                <i class="fa-solid fa-file-invoice"></i>
+                <p id="option-title">PLATI KAZNE</p>
+            </div>
+        </div>
+        <div id="option-wrapper">
+            <div id="deposit-wrapper" style="display: none;">
+                <p id="deposit-title">OSTAVI NOVAC</p>
+                <p id="input-label">VREDNOST</p>
+                <input id="deposit-amount" type="number" placeholder="0$">
+                <p id="input-card-number">BROJ KARTICE</p>
+                <input type="text" id="deposit-account" placeholder="**** **** ****" maxlength="14" onkeyup="$cc.validate(event)" />
+                <button id="cancel-btn" onclick="cancel('deposit')">OTKAZI</button>
+                <button id="deposit-btn" onclick="deposit()">OSTAVI</button>
+            </div>
+            <div id="withdraw-wrapper" style="display: none;">
+                <p id="withdraw-title">UZMI NOVAC</p>
+                <p id="input-label">VREDNOST</p>
+                <input id="withdraw-amount" type="number" placeholder="0$">
+                <p id="input-card-number">BROJ KARTICE</p>
+                <input type="text" id="withdraw-account" placeholder="**** **** ****" maxlength="14" onkeyup="$cc.validate(event)" />
+                <button id="cancel-btn" onclick="cancel('withdraw')">OTKAZI</button>
+                <button id="withdraw-btn" onclick="withdraw()">UZMI</button>
+            </div>
+            <div id="transfer-wrapper" style="display: none;">
+                <p id="transfer-title">POSALJI NOVAC</p>
+                <p id="input-label">VREDNOST</p>
+                <input id="transfer-amount" type="number" placeholder="0$">
+                <p id="input-card-number">BROJ KARTICE</p>
+                <input type="text" id="transfer-account" placeholder="**** **** ****" maxlength="14" onkeyup="$cc.validate(event)" />
+                <button id="cancel-btn"onclick="cancel('transfer')">OTKAZI</button>
+                <button id="transfer-btn" onclick="transfer()">POSALJI</button>
+            </div>
+            <div id="billing-wrapper" style="display: none;">
+                <p id="billing-title">KAZNE</p>
+                <div id='billing-list'>
+                    <!--<div id="billings">
+                        <p>Prosao kroz crveno svetlo <span>200$</span></p>
+                        <button id="button-id" class="plati">PLATI</button>
+                    </div>
+                    <div id="billings">
+                        <p>Drka kurac na ulici <span>500$</span></p>
+                        <button id="button-id" class="plati">PLATI</button>
+                    </div>
+                    <div id="billings">
+                        <p>Javna golotinja <span>1000$</span></p>
+                        <button id="button-id" class="plati">PLATI</button>
+                    </div>
+                    <div id="billings">
+                        <p>Pokusaj otmice sluzbenog lica <span>500$</span></p>
+                        <button id="button-id" class="plati">PLATI</button>
+                    </div>
+                    <div id="billings">
+                        <p>Papuca, klompa, sandala sve u jednom <span>10000$</span></p>
+                        <button id="button-id" class="plati">PLATI</button>
+                    </div>-->
+                </div>
+            </div>
+                <i class="fas fa-search"></i>
+                <p id="security">SIGURNOST</p>
+                <p id="security-desc">GARANTUJEMO VAM SIGURNOST</p>
+
+                <i class="fas fa-chart-line"></i>
+                <p id="tax">TAXA</p>
+                <p id="tax-desc">HUB BANKA IMA TAXU CAK 2%</p>
+
+                <i class="fas fa-bolt"></i>
+                <p id="fast">SLANJE</p>
+                <p id="fast-desc">NOVAC STIZE ODMAH PRI SLANJU</p>
+        </div>
+    </div>
+    <div id="generate-card" style="display: none;">
+        <h1>GENERISANJE KARTICE</h1>
+        <img src="images/kartica.png">
+        <input type="text" id="number1" max="4" oninput="numOnly(this.id);" maxlength="4">
+        <input type="text" id="number2" max="4" oninput="numOnly(this.id);" maxlength="4">
+        <p id="name">Dragicavljevic Milojko</p>
+        <p id="mesec">07</p>
+        <p id="godine">30</p>
+        <button type="button" onclick="generatecard()">GENERISI</button>
+        <input type="text" id="cvd" max="4" oninput="numOnly(this.id);" maxlength="3">
+        <i class="fa-solid fa-xmark" onclick="dialogclose()"></i>
+        <p id="errorce"></p>
+    </div>
+    <div id="generate-pin" style="display: none;">
+        <h1>GENERISANJE PINA</h1>
+        <input type="text" id="pin1" max="4" oninput="numOnly(this.id);" maxlength="4">
+        <button type="button" onclick="generatepin()">GENERISI</button>
+        <i class="fa-solid fa-xmark" onclick="dialogclose2()"></i>
+        <p id="errorce2"></p>
+    </div>
+    <div id="error-notify" style="display: none;">
+        <p id="error-notif">ERROR NOTIFIKACIJA</p>
+    </div>
+    <div id="success-notify" style="display: none;">
+        <p id="success-notif">SUCCESS NOTIFIKACIJA</p>
+    </div>
+</body>
+</html>

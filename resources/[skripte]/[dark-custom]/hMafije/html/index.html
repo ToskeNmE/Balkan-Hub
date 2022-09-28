@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mafije</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="vehicle-wrapper"></div>
+
+    <div id="bossmenu-wrapper">
+        <div id="poeni-orge">
+            <p id="poeni-label">POENI<br><span>ORGANIZACIJE</span></p>
+            <hr>
+            <p id="br-poena"><span id="poeni-org">50</span> POENA</p>
+        </div>
+        <div id="button-wrapper">
+            <div id="zaposli-radnika" onclick="zaposljavanje()">
+                <p>ZAPOSLI<br>RADNIKE</p>
+                <img src="https://balkan-hub.com/development/slike/mafije/zaposlavanje.png">
+            </div>
+            <div id="upravljanje-radnicima" onclick="upravljanje()">
+                <img src="https://balkan-hub.com/development/slike/mafije/upravljanje.png">
+                <p>UPRAVLJAJ<br>RADNICIMA</p>
+            </div>
+            <div id="salon-organizacije" onclick="salonorge()">
+                <img src="https://balkan-hub.com/development/slike/mafije/salon-vozila.png">
+                <p>SALON<br>VOZILA</p>
+            </div>
+            <div id="nadogradi-organizaciju" onclick="nabudziorg()">
+                <img src="https://balkan-hub.com/development/slike/mafije/lvlup.png">
+                <p>NADOGRADI<br>ORGANIZACIJU</p>
+            </div>
+            <div id="informacije-zaposlenih">
+                <img src="https://balkan-hub.com/development/slike/mafije/info.png">
+                <p>INFORMACIJE<br>CLANOVA</p>
+            </div>
+            <div id="poeni-shop">
+                <p>USKORO</p>
+            </div>
+        </div>
+        <div id="level-org">
+            <img id="lvl-orge" src="https://balkan-hub.com/development/slike/mafije/rankovi/iron.png">
+        </div>
+    </div>
+    <div id="zaposljavanje-wrapper">
+        <h1>LISTA IGRACA</h1>
+        <div id="lista-igraca"></div>
+        <i class="fas fa-arrow-circle-left" onclick="gobacktomain()"></i>
+    </div>
+    <div id="upravljanje-wrapper">
+        <h1>UPRAVLJANJE RADNIKA</h1>
+        <div id="lista-radnika"></div>
+        <i class="fas fa-arrow-circle-left" onclick="gobacktomain()"></i>
+    </div>
+    <div id="salonorge-wrapper">
+        <h1>SALON ORGANIZACIJE</h1>
+        <div id="lista-vozila"></div>
+        <i class="fas fa-arrow-circle-left" onclick="gobacktomain()"></i>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+
+html, body{
+	font-family: 'Jura', sans-serif;
+	overflow: hidden;
+}
+
+body {
+	width:100%;
+	height:100%;
+	display: none;
+}
+
+.text {
+	position: fixed;
+	left: 60.5%;
+	top: 49.5%;
+	color:rgba(255, 255, 255, 0.8);
+	font-size: 1.1vw;
+	letter-spacing: 0.2vw;
+	text-shadow: 1px 1px 4px #000000;
+	font-weight: bold;
+}
+
+.key {
+	position: fixed;
+	left: 58.76%;
+	top: 49.5%;
+	color:rgba(255, 255, 255, 0.8);
+	font-size: 1.1vw;
+	letter-spacing: 0.2vw;
+	text-shadow: 1px 1px 4px #000000;
+	font-weight: bold;
+}

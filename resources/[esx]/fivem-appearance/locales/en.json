@@ -1,0 +1,127 @@
+{
+  "modal": {
+    "save": {
+      "title": "Sacuvaj promene",
+      "description": "Sacuvaj sve promene koje ste do sada napravili"
+    },
+    "exit": {
+      "title": "Izađite iz prilagođavanja",
+      "description": "Nema promena koje bi mogle biti sacuvane"
+    },
+    "accept": "DA",
+    "decline": "NE"
+  },
+  "ped": {
+    "title": "Ped",
+    "model": "Model"
+  },
+  "headBlend": {
+    "title": "Roditelji",
+    "shape": {
+      "title": "Lice",
+      "firstOption": "Otac",
+      "secondOption": "Majka",
+      "mix": "Mesavina"
+    },
+    "skin": {
+      "title": "Koza",
+      "firstOption": "Otac",
+      "secondOption": "Majka",
+      "mix": "Mesavina"
+    }
+  },
+  "faceFeatures": {
+    "title": "Detalji lica",
+    "nose": {
+      "title": "Nos",
+      "width": "Sirina",
+      "height": "Visina",
+      "size": "Velicina",
+      "boneHeight": "Visina kosti",
+      "boneTwist": "Izvrnutost kosti",
+      "peakHeight": "Visina vrha"
+    },
+    "eyebrows": {
+      "title": "Obrve",
+      "height": "Visina",
+      "depth": "Dubina"
+    },
+    "cheeks": {
+      "title": "Obrazi",
+      "boneHeight": "Visina kosti",
+      "boneWidth": "Sirina kosti",
+      "width": "Sirina"
+    },
+    "eyesAndMouth": {
+      "title": "Oci i usta",
+      "eyesOpening": "Otvaranje ociju",
+      "lipsThickness": "Debljina usana"
+    },
+    "jaw": {
+      "title": "Vilica",
+      "width": "Sirina",
+      "size": "Sirina"
+    },
+    "chin": {
+      "title": "Brada",
+      "lowering": "Spustanje",
+      "length": "Daljina",
+      "size": "Velicina",
+      "hole": "Velicina otvora"
+    },
+    "neck": {
+      "title": "Vrat",
+      "thickness": "Debljina"
+    }
+  },
+  "headOverlays": {
+    "title": "Izgled",
+    "hair": {
+      "title": "Kosa",
+      "style": "Izgled",
+      "color": "Boja",
+      "highlight": "Istaknite"
+    },
+    "opacity": "Prozirnost",
+    "style": "Izgled",
+    "color": "Boja",
+    "blemishes": "Mrlje",
+    "beard": "Brada",
+    "eyebrows": "Obrve",
+    "ageing": "Godine",
+    "makeUp": "Sminka",
+    "blush": "Crvenilo",
+    "complexion": "Ten",
+    "sunDamage": "Ostećenja od sunca",
+    "lipstick": "Ruz",
+    "moleAndFreckles": "Mladezi i pege",
+    "chestHair": "Dlake na grudima",
+    "bodyBlemishes": "Mrlje na telu",
+    "eyeColor": "Boja ociju"
+  },
+  "components": {
+    "title": "Odeca",
+    "drawable": "Izvlacenje",
+    "texture": "Tekstura",
+    "mask": "Maska",
+    "upperBody": "Gornji deo tela",
+    "lowerBody": "Donji deo tela",
+    "bags": "Torbe",
+    "shoes": "Patike",
+    "scarfAndChains": "Salovi i kajle",
+    "shirt": "Kosulja",
+    "bodyArmor": "Panciri",
+    "decals": "Nalepnice",
+    "jackets": "Jakne"
+  },
+  "props": {
+    "title": "Rekviziti",
+    "drawable": "Izvlacenje",
+    "texture": "Tekstura",
+    "hats": "Kacige",
+    "glasses": "Naocare",
+    "ear": "Uvo",
+    "watches": "Satovi",
+    "bracelets": "Narukvice"
+  }
+}

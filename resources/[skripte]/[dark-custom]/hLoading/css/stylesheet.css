@@ -1,0 +1,281 @@
+/***************************
+    BODY START
+***************************/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Lato');
+* {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    animation-name: bgSlide;
+    animation-direction: normal;
+    animation-duration: 18s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    -o-animation-timing-function: ease-in;
+    background-image: var(--ImageOne);
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#dugmici {
+    position: absolute;
+    top: -100%;
+    right: -240%;
+    width: 70%;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 1920px;
+    height: 1080px;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+#myAudio {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 1915px;
+    height: 1000px;
+}
+
+#test {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 166, 0, 0.413);
+
+}
+
+@keyframes bgSlide {
+    0% {
+        background-image: var(--ImageOne), var(--ImageTwo);
+    }
+    20% {
+        background-image: var(--ImageTwo), var(--ImageThree);
+    }
+    40% {
+        background-image: var(--ImageThree), var(--ImageFour);
+    }
+    60% {
+        background-image: var(--ImageFour), var(--ImageFive);
+    }
+    80% {
+        background-image: var(--ImageFive), var(--ImageOne);
+    }
+}
+
+.blur {
+    -webkit-filter: blur(var(--background-blur)) contrast(var(--background-contrast));
+    filter: blur(var(--background-blur)) contrast(var(--background-contrast));
+}
+
+hr {
+    height: 6px;
+    background-color: var(--loadbar-progress-color);
+    border: none;
+}
+
+.logo {
+    width: 320px;
+    width: 320px;
+}
+
+.Rynxd {
+    width: 5%;
+    background-color: var(--loadbar-progress-color);
+    height: var(--loadbar-height);
+    position: absolute;
+    left: 10%;
+}
+
+
+/***************************
+    BODY END
+***************************/
+
+
+/***************************
+    FONT/TEXT START
+***************************/
+
+h1 {
+    color: white;
+    font-family: Poppins;
+    font-weight: lighter;
+}
+
+h5 {
+    font-family: Poppins;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+p {
+    font-family: Poppins;
+}
+
+.section-top p {
+    font-family: Poppins;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+    top: 25px;
+}
+
+.section-top h6 {
+    text-shadow: 2px 2px 5px var(--fadeTo-Color);
+    text-transform: uppercase;
+    color: rgb(241, 235, 235);
+    text-align: center;
+    position: relative;
+    top: 25px;
+}
+
+
+/***************************
+    FONT/TEXT END
+***************************/
+
+
+/***************************
+    CONTAINERS/BOX START
+***************************/
+
+#container {
+    text-shadow: 2px 2px 5px var(--fadeTo-Color);
+    position: absolute;
+    color: rgb(241, 235, 235);
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    text-align: center;
+}
+
+#containerservertitle {
+    text-shadow: 2px 2px 5px var(--fadeTo-Color);
+    position: absolute;
+    color: rgb(241, 235, 235);
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    text-align: center;
+}
+
+#servertext {
+    top: 10.1%;
+    left: 50%;
+    transform: translate(-0%, -115%);
+}
+
+#containersongname {
+    text-shadow: 2px 2px 5px var(--fadeTo-Color);
+    position: absolute;
+    text-transform: uppercase;
+    color: rgb(241, 235, 235);
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    text-align: center;
+}
+
+#containerloading {
+    text-shadow: 2px 2px 5px var(--fadeTo-Color);
+    position: absolute;
+    color: rgb(241, 235, 235);
+    top: 92.8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    text-align: center;
+    width: 96.3%;
+    height: var(--loadbar-height);
+    margin-left: 2px;
+    margin-right: 3px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+}
+
+#containerloadingtext {
+    text-shadow: 2px 2px 5px var(--fadeTo-Color);
+    position: absolute;
+    color: rgb(241, 235, 235);
+    top: 93.89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    text-align: center;
+}
+
+#discordlink {
+    color: var(--footer-font-color);
+    left: 0;
+    bottom: 0;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+#websitelink {
+    color: var(--footer-font-color);
+    left: 0;
+    bottom: 0;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+#ruletext {
+    color: var(--footer-font-color);
+    left: 0;
+    bottom: 0;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+#rule1 {
+    color: var(--footer-font-color);
+    left: 0;
+    bottom: 0;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+#bottom_nav {
+    width: 90%;
+    vertical-align: text-bottom;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    z-index: 9999;
+}
+
+
+/***************************
+    CONTAINERS/BOX END
+***************************/

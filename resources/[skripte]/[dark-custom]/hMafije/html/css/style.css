@@ -1,0 +1,608 @@
+* {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+#vehicle-wrapper {
+    position: absolute;
+    left: 2%;
+    top: 15%;
+    width: 20%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.298);
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+}
+
+#car-container {
+    position: relative;
+    width: 95%;
+    height: 35%;
+    top: 1%;
+    left: 2.2%;
+    border: 2px solid orange;
+    border-radius: 10px;
+    margin-top: 2.5%;
+}
+
+#car-container img {
+    position: relative;
+    width: 25vh;
+    height: 14vh;
+    top: -2%;
+    left: 12%;
+}
+
+#car-container button {
+    position: relative;
+    top: -14%;
+    left: 20%;
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: white;
+    width: 60%;
+    height: 20%;
+    font-size: 2vh;
+    transform: scale(1.0);
+    transition: all .5s;
+}
+
+#car-container button:hover {
+    transform: scale(1.05);
+}
+
+#car-container #car-name {
+    position: relative;
+    top: -7%;
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5vh;
+}
+
+#car-container #fuel-level,#engine-level {
+    color: orange;
+}
+
+#car-container #veh-info {
+    position: relative;
+    top: -12%;
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3vh;
+}
+
+#car-container #engine-level {
+    color: orange;
+}
+
+#bossmenu-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.646);
+    display: none;
+}
+
+#bossmenu-wrapper #poeni-orge {
+    position: absolute;
+    left: 1%;
+    top: 5%;
+    width: 23%;
+    height: 90%;
+    border-right: 2px solid rgba(130, 130, 130, 0.387);
+}
+
+#bossmenu-wrapper #poeni-orge #poeni-label {
+    position: relative;
+    top: 23%;
+    font-size: 4vh;
+    letter-spacing: -1px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+#bossmenu-wrapper #poeni-orge #poeni-label span {
+    color: orange;
+}
+
+#bossmenu-wrapper #poeni-orge hr {
+    position: absolute;
+    top: 40%;
+    float: left;
+    width: 72%;
+    border: 2px solid rgba(164, 164, 164, 0.53);
+}
+
+
+#bossmenu-wrapper #poeni-orge #br-poena {
+    position: relative;
+    top: 25%;
+    font-size: 4vh;
+    letter-spacing: -1px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+#bossmenu-wrapper #poeni-orge #br-poena span {
+    color: orange;
+    text-shadow: 0 0 0.2em orange;
+}
+
+#bossmenu-wrapper #button-wrapper {
+    position: absolute;
+    top: 5%;
+    left: 27%;
+    width: 60%;
+    height: 90%;
+}
+
+#bossmenu-wrapper #button-wrapper #zaposli-radnika {
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    width: 35%;
+    height: 40%;
+    background: linear-gradient(0deg, rgba(26,255,195,1) 0%, rgba(255,222,0,0) 77%);
+    border: 2px solid rgba(26,255,195,1);
+    border-radius: 10px;
+    transform: scale(1.0);
+    transition: all .5s;
+}
+
+#bossmenu-wrapper #button-wrapper #zaposli-radnika:hover {
+    transform: scale(1.05);
+}
+
+#bossmenu-wrapper #button-wrapper #zaposli-radnika img {
+    position: relative;
+    top: 40%;
+    left: 0%;
+    width: 100%;
+    height: 60%;
+    border-radius: 0 0 10px 0;
+}
+
+#bossmenu-wrapper #button-wrapper #zaposli-radnika p {
+    position: absolute;
+    color: white;
+    left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vh;
+    font-weight: 700;
+    text-shadow: 0 0 0.15em rgba(26,255,195, 1);
+}
+
+#bossmenu-wrapper #button-wrapper #upravljanje-radnicima {
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    width: 35%;
+    height: 40%;
+    background: linear-gradient(0deg, rgb(122, 11, 213) 0%, rgba(255,222,0,0) 77%);
+    border: 2px solid rgba(122, 11, 213,1);
+    border-radius: 10px;
+    transform: scale(1.0);
+    transition: all .5s;
+}
+
+#bossmenu-wrapper #button-wrapper #upravljanje-radnicima:hover {
+    transform: scale(1.05);
+}
+
+#bossmenu-wrapper #button-wrapper #upravljanje-radnicima img {
+    position: absolute;
+    left: -7%;
+    top: 7.6%;
+    width: 55%;
+    height: 92.3%;
+    border-radius: 0 0 10px 0; 
+}
+
+#bossmenu-wrapper #button-wrapper #upravljanje-radnicima p {
+    position: absolute;
+    color: white;
+    left: 32%;
+    top: 59%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vh;
+    font-weight: 700;
+    text-shadow: 0 0 0.15em rgb(0, 0, 0);
+}
+
+#level-org {
+    position: absolute;
+    left: 5.5%;
+    top: 65%;
+    width: 17%;
+    height: 20%;
+}
+
+#level-org img {
+    width: 70%;
+    height: 100%;
+}
+
+#bossmenu-wrapper #button-wrapper #salon-organizacije {
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    width: 35%;
+    height: 40%;
+    background: linear-gradient(0deg, rgb(213, 102, 11) 0%, rgba(255,222,0,0) 77%);
+    border: 2px solid rgba(213, 102, 11,1);
+    border-radius: 10px;
+    transform: scale(1.0);
+    transition: all .5s;
+}
+
+#bossmenu-wrapper #button-wrapper #salon-organizacije:hover {
+    transform: scale(1.05);
+}
+
+#bossmenu-wrapper #button-wrapper #salon-organizacije img {
+    position: absolute;
+    left: -25%;
+    top: 17%;
+    width: 110%;
+}
+
+#bossmenu-wrapper #button-wrapper #salon-organizacije p {
+    position: absolute;
+    color: white;
+    left: 55%;
+    top: -5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vh;
+    font-weight: 700;
+    text-shadow: 0 0 0.15em rgb(213, 102, 11);
+}
+
+#bossmenu-wrapper #button-wrapper #nadogradi-organizaciju {
+    position: absolute;
+    top: 55%;
+    left: 0%;
+    width: 35%;
+    height: 40%;
+    background: linear-gradient(0deg, rgb(22, 92, 183) 0%, rgba(255,222,0,0) 77%);
+    border: 2px solid rgba(22, 92, 183,1);
+    border-radius: 10px;
+    transform: scale(1.0);
+    transition: all .5s;
+}
+
+#bossmenu-wrapper #button-wrapper #nadogradi-organizaciju:hover {
+    transform: scale(1.05);
+}
+
+#bossmenu-wrapper #button-wrapper #nadogradi-organizaciju p {
+    position: absolute;
+    color: white;
+    left: 10%;
+    top: -5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vh;
+    font-weight: 700;
+    text-shadow: 0 0 0.15em rgb(22, 92, 183);
+}
+
+#bossmenu-wrapper #button-wrapper #nadogradi-organizaciju img {
+    position: absolute;
+    left: 22%;
+    top: 35%;
+    width: 55%;
+    height: 62%;
+}
+
+#bossmenu-wrapper #button-wrapper #informacije-zaposlenih {
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    width: 35%;
+    height: 40%;
+    background: linear-gradient(0deg, rgba(26, 201, 40, 0.644) 0%, rgba(255,222,0,0) 77%);
+    border: 2px solid rgba(26, 201, 40,1);
+    border-radius: 10px;
+    transform: scale(1.0);
+    transition: all .5s;
+}
+
+#bossmenu-wrapper #button-wrapper #informacije-zaposlenih:hover {
+    transform: scale(1.05);
+}
+
+#bossmenu-wrapper #button-wrapper #informacije-zaposlenih p {
+    position: absolute;
+    color: white;
+    left: 10%;
+    top: -5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vh;
+    font-weight: 700;
+    text-shadow: 0 0 0.15em rgb(26, 201, 40);
+}
+
+#bossmenu-wrapper #button-wrapper #informacije-zaposlenih img {
+    position: absolute;
+    left: 22%;
+    top: 35%;
+    width: 55%;
+    height: 62%;
+}
+
+#bossmenu-wrapper #button-wrapper #poeni-shop {
+    position: absolute;
+    top: 55%;
+    left: 80%;
+    width: 35%;
+    height: 40%;
+    background: linear-gradient(0deg, rgb(232, 76, 203) 0%, rgba(255,222,0,0) 77%);
+    border: 2px solid rgba(232, 76, 203,1);
+    border-radius: 10px;
+    transform: scale(1.0);
+    transition: all .5s;
+    filter: blur(2px);
+}
+
+#bossmenu-wrapper #button-wrapper #poeni-shop:hover {
+    transform: scale(1.05);
+}
+
+#bossmenu-wrapper #button-wrapper #poeni-shop p {
+    position: absolute;
+    color: white;
+    left: 28%;
+    top: 32%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vh;
+    font-weight: 700;
+    text-shadow: 0 0 0.15em rgba(232, 76, 203,1);
+}
+
+#zaposljavanje-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.646);
+    display: none;
+}
+
+#zaposljavanje-wrapper h1 {
+    position: relative;
+    top: 5%;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vh;
+}
+
+#zaposljavanje-wrapper #lista-igraca {
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    width: 25%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.296);
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#zaposljavanje-wrapper #lista-igraca button {
+    width: 80%;
+    height: 15%;
+    margin-left: 10%;
+    margin-top: 6%;
+    outline: none;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2vh;
+    border-radius: 10px;
+    transform: scale(1.0);
+    transition: all .5s;
+}
+
+#zaposljavanje-wrapper #lista-igraca button:hover {
+    transform: scale(1.05);
+}
+
+#zaposljavanje-wrapper .fa-arrow-circle-left {
+    position: absolute;
+    left: 36%;
+    top: 9.2%;
+    font-size: 4vh;
+    color: orange;
+    transition: all .5s;
+}
+
+#zaposljavanje-wrapper .fa-arrow-circle-left:hover {
+    font-size: 4.1vh;
+}
+
+#upravljanje-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.646);
+    display: none;
+}
+
+#upravljanje-wrapper h1 {
+    position: relative;
+    top: 5%;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vh;
+}
+
+#upravljanje-wrapper .fa-arrow-circle-left {
+    position: absolute;
+    left: 30%;
+    top: 9.2%;
+    font-size: 4vh;
+    color: orange;
+    transition: all .5s;
+}
+
+#upravljanje-wrapper .fa-arrow-circle-left:hover {
+    font-size: 4.1vh;
+}
+
+#upravljanje-wrapper #lista-radnika {
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    width: 25%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.296);
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+}
+
+#upravljanje-wrapper #lista-radnika div {
+    width: 90%;
+    height: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vh;
+    transform: scale(1.0);
+    transition: all .5s;
+}
+
+#upravljanje-wrapper #lista-radnika div p {
+    position: relative;
+    top: 15%;
+    left: 1%;
+}
+
+#upravljanje-wrapper #lista-radnika div .fa-user-plus {
+    position: relative;
+    top: -90%;
+    left: 80%;
+    color: green;
+}
+
+#upravljanje-wrapper #lista-radnika div .fa-user-xmark {
+    position: relative;
+    top: -90%;
+    left: 80%;
+    color: red;
+}
+
+#upravljanje-wrapper #lista-radnika div .fa-user-slash {
+    position: relative;
+    top: -90%;
+    left: 80%;
+    color: blue;
+}
+
+#salonorge-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.646);
+    display: none;
+}
+
+#salonorge-wrapper h1 {
+    position: relative;
+    top: 5%;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vh;
+}
+
+#salonorge-wrapper .fa-arrow-circle-left {
+    position: absolute;
+    left: 30%;
+    top: 9.2%;
+    font-size: 4vh;
+    color: orange;
+    transition: all .5s;
+}
+
+#salonorge-wrapper .fa-arrow-circle-left:hover {
+    font-size: 4.1vh;
+}
+
+#salonorge-wrapper #lista-vozila {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 85%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.296);
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+
+#salonorge-wrapper #lista-vozila div {
+    margin: 2%;
+    width: 15%;
+    height: 30%;
+    background-color: rgba(255, 166, 0, 0.65);
+    display: inline-block;
+}
+
+#salonorge-wrapper #lista-vozila div img {
+    width: 100%;
+    height: 60%;
+}
+
+#salonorge-wrapper #lista-vozila div p {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    margin-top: 2%;
+}
+
+
+#salonorge-wrapper #lista-vozila div p span {
+    color: green;
+}
+
+#salonorge-wrapper #lista-vozila div button {
+    width: 100%;
+    height: 15%;
+    background-color: rgba(0, 0, 0, 0.408);
+    outline: none;
+    border: none;
+    color: white;
+    transition: all .5s;
+}
+
+#salonorge-wrapper #lista-vozila div button:hover {
+    background-color: rgba(21, 110, 27, 0.643);
+}

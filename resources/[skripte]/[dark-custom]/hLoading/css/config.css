@@ -1,0 +1,16 @@
+:root {
+    --background-contrast: 95%;
+    --background-blur: 50px;
+    --loadbar-color: #111111;   
+    --loadbar-progress-color: red;
+    --loadbar-height: 28px;
+    --footer-font-color: rgb(255, 255, 255, 5);
+    --footer-font-size: 24px;
+    --fadeTo-Color: black;
+    --ImageOne: url('https://balkan-hub.com/development/slike/loading/bg1.png');
+    --ImageTwo: url('https://balkan-hub.com/development/slike/loading/bg2.png');
+    --ImageThree: url('https://balkan-hub.com/development/slike/loading/bg3.png');
+    --ImageFour: url('https://balkan-hub.com/development/slike/loading/bg4.png');
+    --ImageFive: url('https://balkan-hub.com/development/slike/loading/bg5.png');
+    --ImageSix: url('https://balkan-hub.com/development/slike/loading/bg6.png');
+}

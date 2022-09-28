@@ -1,0 +1,17 @@
+{
+  "unlocked_door": "Otkljucana vrata",
+  "locked_door": "Zakljucana vrata",
+  "lock_door": "[E] Zakljucaj vrata",
+  "unlock_door": "[E] Otkljucaj vrata",
+  "door_lock": "Door lock",
+  "passcode": "Sifra",
+  "lockpick_broke": "Lockpick ti se polomio",
+  "pick_lock": "Iskoristi lockpick",
+  "add_lock": "Dodaj doorlock",
+  "edit_lock": "Izmeni doorlock",
+  "remove_lock": "Ukloni doorlock",
+  "lock": "zakljucas",
+  "unlock": "otkljucas",
+  "unable_to": "Ne mozes da %s vrata",
+  "create_modify_lock": "Napravi doorlock ili izmeni postojeci"
+}

@@ -1,0 +1,76 @@
+{
+  "DefaultLogs": {
+    "GlobalBan": "**%s** se pokusao povezati ali je global banovan.\n**Ban UUID:** `%s`\n**Ban razlog:** `%s`",
+    "NameChange": "Igrac **%s** se bio zvao **%s**",
+    "NameChangeChat": "%s se bio zvao %s",
+    "Left": "**%s** je napustio server. (Razlog: %s)",
+    "Join": "'**%s** se povezuje na server.'",
+    "Shooting": "**%s** je pucao `%s` `%s puta`",
+    "Explosion": "**%s** je napravio eksploziju `%s`",
+    "ResourceStop": "**%s** je stopirana.",
+    "ResourceStart": "**%s** je upaljena."
+  },
+
+  "Commands": {
+    "Screenshot": {
+      "Log": "**Screenshot of:** %s (ID: %s)\n**Requested by:** %s (ID: %s)",
+      "Success": "The screenshot of %s was posted on discord!",
+      "InvalidId": "The player ID provided is invalid or not a active player.",
+      "InvalidPerms": "You don't have permission to use this command!"
+    },
+    "LogHistory": {
+      "Success": "Skorasnji logovi za: %s (%s)",
+      "NoLogs": "Nema dostupnih logova.",
+      "InvalidId": "ID ovog igraca nije validan ili nije aktivan igrac.",
+      "InvalidPerms": "Nemas dozvolu za ovu komnandu!"
+    }
+  },
+
+  "Other": {
+    "ForceSteamLog": "Disonnected player **%s** for not having steam active.",
+    "ForceSteam": "Please start steam and reconnect to the server.",
+    "NoSteamLog": "Player **%s** does not have steam active and we can't log their name.",
+    "NoSteam": "is connecting wihout a steam id."
+  },
+
+  "DeathReasons": {
+    "Suicide": "izvrsio samoubistvo",
+    "Died": "umro",
+    "Murdered": "ubijen",
+    "Torched": "spaljen",
+    "Knifed": "uboden",
+    "Pistoled": "upucan pistoljem",
+    "Riddled": "riddled",
+    "Rifled": "upucan puskom",
+    "MachineGunned": "upucan machine gunom",
+    "Pulverized": "upucan shotgunom",
+    "Sniped": "upucan snajperom",
+    "Obliterated": "obliterated",
+    "Shredded": "smleven",
+    "Bombed": "bombardiran",
+    "MowedOver": "pregazen",
+    "Flattened": "pregazen",
+    "Killed": "ubijen"
+  },
+
+  "WeaponFired": {
+    "Undefined": "Nije definisano"
+  },
+
+  "AntiCheat": {
+    "ACConfigEditLog": "Player **%s** tried to use a modified config file.'",
+    "ACConfigEdit": "You have been kicked from the server",
+    "ACBlacklistedVehLog": "Player **%s** tried to use a blacklisted vehicle: `%s`",
+    "ACBlacklistedVehKick": "You have been kicked from the server.\nReason: Trying to use blacklisted vehicles multiple times.",
+    "BlacklistedObject": "Blacklisted model deleted:`%s`",
+    "BlacklistedKey": "Blacklisted key pressed:`%s` (%s)'",
+    "BlacklistedCommand": "Blacklisted command detected:`%s`\nPlayer has been kicked from the server.",
+    "BlacklistedCommandKick": "You have been kicked from the server."
+  },
+
+  "CommandSuggestions": {
+    "logs": "See the recent 5 logs of a player.",
+    "screenshot": "Request a screenshot of a player's game.",
+    "playerIdSuggestion": "The id of the player."
+  }
+}

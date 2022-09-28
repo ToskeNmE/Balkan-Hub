@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/web/build/static/js/main.chunk.js",
+    "runtime-main.js": "/web/build/static/js/bundle.js",
+    "vendors~main.js": "/web/build/static/js/vendors~main.chunk.js",
+    "index.html": "/web/build/index.html"
+  },
+  "entrypoints": [
+    "static/js/bundle.js",
+    "static/js/vendors~main.chunk.js",
+    "static/js/main.chunk.js"
+  ]
+}

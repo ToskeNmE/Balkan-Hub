@@ -1,0 +1,38 @@
+Locales['en'] = {
+	['store_veh'] = "Pritisnite ~INPUT_CONTEXT~ da parkirate vozilo",
+	['release_veh'] = "Pritisnite ~INPUT_CONTEXT~ da pristupite garazi",
+	['tow_veh'] = "Pritisnite ~INPUT_CONTEXT~ da vam pauk odnese vozilo u garazu",
+	['p_impound_veh'] = "Pritisnite ~INPUT_CONTEXT~ da izvadite zaplijenjeno vozilo - $500",
+	['subowner_veh'] = "Pritisnite ~INPUT_CONTEXT~ da postavite suvlasnika auta",
+	
+	['veh_released'] = "Vozilo isparkirano",
+	['veh_stored'] = "Vozilo  parkirano",
+	['repair'] = "Vozilo mora biti popravljeno",
+	
+	['max_subs'] = "Dostignut je maksimalan broj suvlasnika za ovo vozilo",
+	['sub_added'] = "Novi suvlasnik dodan",
+	['you_are_sub'] = "Dobili ste suvlasnistvo nad vozilom sa tablicama %s",
+	['not_owner'] = "Nije vase vozilo",
+	['not_veh'] = "Ne posjedujete ovo vozilo ili ono ne postoji",
+	['sub_deleted'] = "Suvlasnik obrisan",
+	['checking_veh'] = "Trazenje vozila...",
+	['veh_impounded'] = "Pauk je odvukao vozilo <br> tablica %s",
+	['no_money'] = "Nemate novca da pozovete pauka",
+	['cant_impound'] = "Ne mozete odvuci ovo vozilo",
+	['no_veh'] = "Taj registarski broj ne postoji!",
+	['set_sub'] = "Postavi suvlasnika",
+	['manage_sub'] = "Upravljaj suvlasnicima",
+	['no_players'] = "Nema igraca u blizini",
+	['deleting_sub'] = "Brisanje suvlasnika - %s",
+	['sure_delete'] = "Jeste sigurni da zelite obrisati ovog suvlasnika?",
+	['no'] = "Ne",
+	['yes'] = "Da",
+	['no_subs'] = "Ovo vozilo nema suvlasnika",
+	['vehs_out'] = "Vozila izvan garaze",
+	['police_impound'] = "Policijski parking",
+	['veh_reg'] = "Registracijski broj",
+	['owner_menu'] = "Izbornik vlasnika - %s",
+	
+	['garage_blip'] = "Garaza",
+	['impound_blip'] = "Paukov parking"
+}

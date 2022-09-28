@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Akrobat-Bold";
+  src: url("fonts/Akrobat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Akrobat-Regular";
+  src: url("fonts/Akrobat-Regular.ttf");
+}
+
+body {
+  background: none !important;
+}
+
+#container {
+  padding: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 198, 108);
+  background: linear-gradient(
+    40deg,
+    rgba(255, 198, 108, 1) 45%,
+    rgba(255, 255, 255, 1) 75%
+  );
+  height: 40%;
+  width: 35%;
+  border-radius: 30px;
+}
+
+.naslov {
+  font-family: "Akrobat-Bold", sans-serif;
+  font-size: 250%;
+  position: absolute;
+  color: white;
+  text-shadow: 0 0 1.5em rgba(0, 0, 0, 0.465), 0 0 0.2em rgba(0, 0, 0, 0.465);
+  left: 36.3%;
+}
+
+.dugme {
+  font-family: "Akrobat-Bold", sans-serif;
+  font-size: 100%;
+  position: absolute;
+  width: 25%;
+  height: 13%;
+  top: 65%;
+  left: 37.5%;
+  border-style: solid;
+  border-radius: 12px;
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.582);
+  color: azure;
+  transition-duration: 0.6s;
+}
+
+.dugme:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slika {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  width: 20%;
+  height: 30%;
+}

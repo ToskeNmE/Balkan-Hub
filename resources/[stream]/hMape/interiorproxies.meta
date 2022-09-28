@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SInteriorOrderData>
+  <startFrom value="2000" />
+  <filePathHash value="0" />
+  <proxies>
+    <Item>gabz_hei_hw1_02_interior_v_shop_247_milo_</Item>
+    <Item>breze_court_milo_</Item>
+    <Item>int_mrpd_milo_</Item>
+    <Item>gabz_pillbox_dlc_milo_</Item>
+    <Item>gabz_pillbox_milo_</Item>
+    <Item>verpi_dv_school_milo_</Item>
+    <Item>int_ballas_gang_milo_</Item>
+    <Item>int_garagel_ballas_gang_milo_</Item>
+    <Item>int_warehouse_one_ballas_gang_milo_</Item>
+    <Item>int_warehouse_two_ballas_gang_milo_</Item>
+    <Item>magazsh_milo_</Item>
+    <Item>nutt_mosleys_milo_</Item>
+    <Item>iak_farm_cs610_milo_</Item>
+    <Item>np_town_hall_milo_</Item>
+    <Item>breze_dealership_milo_</Item>
+    <Item>int_sheriff_milo_</Item>
+    <Item>qnx_fib_milo_</Item>
+    <Item>qnx_fib2_milo_</Item>
+
+  </proxies>
+</SInteriorOrderData>

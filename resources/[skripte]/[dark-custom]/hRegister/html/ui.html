@@ -1,0 +1,58 @@
+	<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>registracija</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="ui.css"/>
+<script id="applicationScript" type="text/javascript" src="ui.js"></script>
+<script src="ui.js"></script>
+</head>
+<body>
+<div id="registration">
+	<img id="background" src="background.png" srcset="background.png 1x">
+		
+	<img id="character" src="character.png" srcset="character.png 1x">
+		
+	<div id="label">
+		<span>REGISTRACIJA KARAKTERA</span>
+	</div>
+	<div id="name-wrapper">
+		<input class="name-input" id="name-input" type="text" onchange="checkName()" onKeyUp="checkName()" onmouseup="checkName()">
+		<div id="name">
+			<span>IME</span>
+		</div>
+	</div>
+	<div id="lastname-wrapper">
+		<input class="lastname-input" id="lastname-input" type="text" onchange="checkLastName()" onKeyUp="checkLastName()" onmouseup="checkLastName()">
+		<div id="lastname">
+			<span>PREZIME</span>
+		</div>
+	</div>
+	<div id="dateofbirth-wrapper">
+		<input class="dateofbirth-input" id="dateofbirth-input" type="date" onchange="checkDOB()" onKeyUp="checkDOB()" onmouseup="checkDOB()">
+		<div id="dateofbirth">
+			<span>DATUM RODJENJA</span>
+		</div>
+	</div>
+	<div id="height-wrapper">
+		<input class="height-input" id="height-input" type="number" min="100" max="190" onchange="checkHeight()" onKeyUp="checkHeight()" onmouseup="checkHeight()">
+		<div id="height">
+			<span>VISINA</span>
+		</div>
+	</div>
+	
+	<div class="radio">
+		<input type="radio" name="sex" value="m">
+		<label for="age1" id="test1">Musko</label>
+		<span class="radio-btn">
+		<input type="radio" name="sex" value="f">
+		<label for="age1" id="test2">Zensko</label>
+	</div>
+	
+	<button type="button" id="register-btn" onclick="register()"><span id="btn-text">REGISTRUJ SE</span></button>
+</div>
+<script src="jquery.min.js"></script>
+</body>
+</html>

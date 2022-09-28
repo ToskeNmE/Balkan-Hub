@@ -1,0 +1,220 @@
+* {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+body {
+    background-image: url('../images/bck.png');
+}
+
+#container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#title {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: akrobat;
+    font-weight: 900;
+    font-size: 4vh;
+    text-shadow: 0.1vh 0.2vh 0.2vh #0c1222c9;
+}
+
+#slika {
+    position: fixed;
+    width: 65%;
+    height: 45%;
+    left: 18%;
+    top: 25%;
+}
+
+#desna-zadnja {
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    width: auto;
+    height: auto;
+    left: 24.1%;
+    top: 55%;
+    font-family: akrobat;
+    font-weight: 1000;
+    font-size: 1.2vh;
+    border-radius: 5px;
+    transform: scale(1.0);
+    transition: all 0.5s;
+    opacity: 0.6;
+}
+
+#desna-prednja {
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    width: auto;
+    height: auto;
+    left: 39%;
+    top: 55%;
+    font-family: akrobat;
+    font-weight: 1000;
+    font-size: 1.2vh;
+    border-radius: 5px;
+    transform: scale(1.0);
+    transition: all 0.5s;
+    opacity: 0.6;
+}
+
+#leva-zadnja {
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    width: auto;
+    height: auto;
+    left: 24.5%;
+    top: 51%;
+    font-family: akrobat;
+    font-weight: 1000;
+    font-size: 1.2vh;
+    border-radius: 5px;
+    transform: scale(1.0);
+    transition: all 0.5s;
+    opacity: 0.6;
+}
+
+#leva-prednja {
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    width: auto;
+    height: auto;
+    left: 39%;
+    top: 51%;
+    font-family: akrobat;
+    font-weight: 1000;
+    font-size: 1.2vh;
+    border-radius: 5px;
+    transform: scale(1.0);
+    transition: all 0.5s;
+    opacity: 0.6;
+}
+
+#hauba {
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    width: auto;
+    height: auto;
+    left: 71.5%;
+    top: 28.5%;
+    font-family: akrobat;
+    font-weight: 1000;
+    font-size: 1.2vh;
+    border-radius: 5px;
+    transform: scale(1.0);
+    transition: all 0.5s;
+    opacity: 0.6;
+}
+
+#gepek {
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    width: auto;
+    height: auto;
+    left: 15%;
+    top: 28.5%;
+    font-family: akrobat;
+    font-weight: 1000;
+    font-size: 1.2vh;
+    border-radius: 5px;
+    transform: scale(1.0);
+    transition: all 0.5s;
+    opacity: 0.6;
+}
+
+
+#desna-zadnji {
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    width: auto;
+    height: auto;
+    left: 21.6%;
+    top: 23%;
+    font-family: akrobat;
+    font-weight: 1000;
+    font-size: 1.2vh;
+    border-radius: 5px;
+    transform: scale(1.0);
+    transition: all 0.5s;
+    opacity: 0.6;
+}
+
+#desna-prednji {
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    width: auto;
+    height: auto;
+    left: 36%;
+    top: 21%;
+    font-family: akrobat;
+    font-weight: 1000;
+    font-size: 1.2vh;
+    border-radius: 5px;
+    transform: scale(1.0);
+    transition: all 0.5s;
+    opacity: 0.6;
+}
+
+#leva-zadnji {
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    width: auto;
+    height: auto;
+    left: 22%;
+    top: 19%;
+    font-family: akrobat;
+    font-weight: 1000;
+    font-size: 1.2vh;
+    border-radius: 5px;
+    transform: scale(1.0);
+    transition: all 0.5s;
+    opacity: 0.6;
+}
+
+#leva-prednji {
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    width: auto;
+    height: auto;
+    left: 36%;
+    top: 17%;
+    font-family: akrobat;
+    font-weight: 1000;
+    font-size: 1.2vh;
+    border-radius: 5px;
+    transform: scale(1.0);
+    transition: all 0.5s;
+    opacity: 0.6;
+}
+
+#desna-zadnja:hover, #desna-prednja:hover, #gepek:hover, #hauba:hover, #leva-zadnja:hover, #leva-prednja:hover, #leva-zadnji:hover, #leva-prednji:hover, #desna-zadnji:hover, #desna-prednji:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}

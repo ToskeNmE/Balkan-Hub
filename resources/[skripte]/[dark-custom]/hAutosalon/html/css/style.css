@@ -1,0 +1,336 @@
+* {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#body {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/R.jpg');
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-track {
+  background: rgba(241, 241, 241, 0.307);
+}
+
+::-webkit-scrollbar-thumb {
+  background: orange;
+}
+
+#cardealer-wrapper {
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    width: 70%;
+    height: 70%;
+    background-color: #060606;
+}
+
+#cardealer-wrapper #title {
+    position: relative;
+    top: 1%;
+    left: 2%;
+    width: 10%;
+    height: 8%;
+    text-align: center;
+}
+
+#cardealer-wrapper #title p {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    letter-spacing: 0.5vh;
+}
+
+#cardealer-wrapper #title p span {
+    font-weight: 900;
+    letter-spacing: 0.7vh;
+}
+
+#cardealer-wrapper #lista-vozila {
+    position: relative;
+    width: 95%;
+    height: 80%;
+    left: 2.5%;
+    top: 5%;
+    background-color: rgba(57, 57, 57, 0.264);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#cardealer-wrapper #lista-vozila #car-wrapper {
+    position: relative;
+    top: 2%;
+    left: 2%;
+    margin: 2%;
+    width: 20%;
+    height: 30%;
+    background-color: #171714;
+    display: inline-block;
+}
+
+#cardealer-wrapper #lista-vozila #car-wrapper img {
+    position: relative;
+    left: 0%;
+    width: 100%;
+    height: 65%;
+}
+
+#cardealer-wrapper #lista-vozila #car-wrapper #bottom-test {
+    position: relative;
+    top: 3%;
+    width: 100%;
+    height: 45%;
+    background-color: #0e0e0d;
+    transition: all .5s;
+    border-top: 2px solid orange;
+}
+
+#cardealer-wrapper #lista-vozila #car-wrapper #bottom-test p {
+    position: relative;
+    top: 10%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2vh;
+}
+
+#cardealer-wrapper #lista-vozila #car-wrapper #bottom-test:hover {
+    background-color: orange;
+    filter: drop-shadow(0 0 0.3rem orange);
+    color: black;
+}
+
+#cardealer-wrapper #o-vozilu {
+    position: relative;
+    width: 95%;
+    height: 80%;
+    left: 2.5%;
+    top: 5%;
+    background-color: rgba(57, 57, 57, 0.264);
+    display: none;
+}
+
+#cardealer-wrapper #o-vozilu img {
+    position: relative;
+    left: 40%;
+    top: 22%;
+    width: 45%;
+    height: 55%;
+}
+
+#cardealer-wrapper #o-vozilu #carname {
+    position: relative;
+    left: 5%;
+    top: -40%;
+    color: rgb(103, 103, 103);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 5px;
+    font-size: 2.4vh;
+}
+
+#cardealer-wrapper #o-vozilu #price span {
+    color: rgb(103, 103, 103);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+#cardealer-wrapper #o-vozilu #price {
+    position: relative;
+    left: 5%;
+    top: -35%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.5vh;
+}
+
+#cardealer-wrapper #o-vozilu #max-speed span {
+    color: rgb(103, 103, 103);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+#cardealer-wrapper #o-vozilu #max-speed {
+    position: relative;
+    left: 5%;
+    top: -35%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.5vh;
+}
+
+#cardealer-wrapper #o-vozilu #fuel-level span {
+    color: rgb(103, 103, 103);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+#cardealer-wrapper #o-vozilu #fuel-level {
+    position: relative;
+    left: 5%;
+    top: -35%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.5vh;
+}
+
+#cardealer-wrapper #o-vozilu #prim-color span {
+    color: rgb(103, 103, 103);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+#cardealer-wrapper #o-vozilu #prim-color {
+    position: relative;
+    left: 5%;
+    top: -32%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.2vh;
+}
+
+#cardealer-wrapper #o-vozilu #sec-color span {
+    color: rgb(103, 103, 103);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+#cardealer-wrapper #o-vozilu #sec-color {
+    position: relative;
+    left: 5%;
+    top: -31%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.2vh;
+}
+
+#cardealer-wrapper #o-vozilu button {
+    position: relative;
+    left: 5%;
+    top: -25%;
+    outline: none;
+    border: none;
+    background-color: orange;
+    opacity: 0.4;
+    width: 15%;
+    height: 10%;
+    transition: all .5s;
+    border-radius: 10px;
+}
+
+#cardealer-wrapper #o-vozilu button:hover {
+    opacity: 1;
+}
+
+#cardealer-wrapper #o-vozilu .fa-eye {
+    background-color: orange;
+    position: relative;
+    left: 6%;
+    top: -23.5%;
+    padding: 0.5%;
+    font-size: 3vh;
+    opacity: 0.4;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+#cardealer-wrapper #o-vozilu .fa-arrow-left-long {
+  position: relative;
+  left: -18%;
+  top: -94.5%;
+  opacity: 0.4;
+  color: orange;
+  font-size: 3vh;
+}
+
+#cardealer-wrapper #o-vozilu .fa-eye:hover, #cardealer-wrapper #o-vozilu .fa-arrow-left-long:hover {
+    opacity: 1;
+}
+
+#cardealer-wrapper #o-vozilu #prim-color-paleta {
+    position: absolute;
+    top: 53.5%;
+    left: 15%;
+    width: 15.5%;
+    height: 4%;
+}
+
+#cardealer-wrapper #o-vozilu #sec-color-paleta {
+    position: absolute;
+    top: 59%;
+    left: 17%;
+    width: 15.5%;
+    height: 4%;
+}
+
+#krug {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    transform: scale(1.0);
+    transition: all .5s;
+}
+
+#krug:hover {
+    transform: scale(1.15);
+}
+
+.ljubicasta {
+    background-color: purple;
+}
+.zelena {
+    background-color: green;
+}
+.plava {
+    background-color: blue;
+}
+.roze {
+    background-color: rgb(235, 59, 174);
+}
+.bela {
+    background-color: rgb(212, 212, 212);
+}
+.crna {
+    background-color: black;
+}
+.narandzasta {
+    background-color: orange;
+}
+
+#preview {
+  position: absolute;
+  left: 42%;
+  top: 90%;
+  width: 50%;
+  display: none;
+}
+
+#preview .fa-angle-left, .fa-xmark, .fa-angle-right {
+  background-color: orange;
+  opacity: 0.5;
+  transition: all .5s;
+  font-size: 3vh;
+  padding: 0.5vh 1.5vh 0.5vh 1.5vh;
+  margin: 1%;
+  border-radius: 10px;
+}
+
+#preview .fa-angle-left:hover, .fa-xmark:hover, .fa-angle-right:hover {
+  opacity: 1;
+}
